@@ -1,12 +1,1296 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="color you day - camell">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>camell</title>
+    <meta property="og:title" content="camell">
+    <meta property="og:description" content="당신의 일상에 컬러를 입혀주는 패브릭 소품 브랜드">
+    <meta property="og:image" content="이미지 절대경로">
+    <meta property="og:url" content="사이트 절대주소">
+    <meta property="og:type" content="website">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css">
+    <!-- AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Font CSS-->
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>color your day - camell</title>
 </head>
+
 <body>
-    <h1>깃허브에 파일 올리기</h1>
-    <p>테스트</p>
+    <header id="header">
+        <div class="max_inner">
+            <button class="btn_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1>
+                <a href="/"><img src="./images/camell_logo.svg" alt="camell"></a>
+            </h1>
+            <nav class="gnb">
+                <ul class="top_menu">
+                    <li><a href="#">브랜드 스토리</a>
+                        <div class="sub_menu">
+                            <div class="inner">
+                                <div class="lnb">
+                                    <h2>브랜드 스토리</h2>
+                                    <ul>
+                                        <li><a href="#">까멜 이야기</a></li>
+                                        <li><a href="#">패턴 시리즈 소개</a></li>
+                                        <li><a href="#">오시는 길</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="sub_menu_event">
+                                    <li><a href="#"><img src="./images/sub_menu_event1.jpg" alt="포토후기"></a></li>
+                                    <li><a href="#"><img src="./images/sub_menu_event2.jpg" alt="이벤트"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">제품 라인업</a>
+                        <div class="sub_menu">
+                            <div class="inner">
+                                <div class="lnb">
+                                    <h2>제품 라인업</h2>
+                                    <ul>
+                                        <li><a href="#">쁘띠 플뢰르</a></li>
+                                        <li><a href="#">모던 그랑</a></li>
+                                        <li><a href="#">모던 레오파드</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="sub_menu_event">
+                                    <li><a href="#"><img src="./images/sub_menu_event1.jpg" alt="포토후기"></a></li>
+                                    <li><a href="#"><img src="./images/sub_menu_event2.jpg" alt="이벤트"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <div class="sub_menu">
+                            <div class="inner">
+                                <div class="lnb">
+                                    <h2>커뮤니티</h2>
+                                    <ul>
+                                        <li><a href="#">이벤트</a></li>
+                                        <li><a href="#">포토후기</a></li>
+                                        <li><a href="#">공지사항</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="sub_menu_event">
+                                    <li><a href="#"><img src="./images/sub_menu_event1.jpg" alt="포토후기"></a></li>
+                                    <li><a href="#"><img src="./images/sub_menu_event2.jpg" alt="이벤트"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="top_sub_btn">
+                <li><a href="#"><img src="./images/icon_user.png" alt="마이페이지"></a></li>
+                <li><a href="#"><img src="./images/icon_search.png" alt="검색"></a></li>
+                <li><a href="#"><img src="./images/icon_cart.png" alt="장바구니"></a>
+                    <span class="cart_num">1</span>
+                </li>
+            </ul>
+            <div class="mobile_menu">
+                <div class="mobile_menu_box">
+                    <ul class="mobile_menu_list">
+                        <li>
+                            <h2>브랜드 스토리</h2>
+                            <ul>
+                                <li><a href="#">까멜 이야기</a></li>
+                                <li><a href="#">패턴 시리즈 소개</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>제품 라인업</h2>
+                            <ul>
+                                <li><a href="#">쁘띠 플뢰르</a></li>
+                                <li><a href="#">모던 그랑</a></li>
+                                <li><a href="#">모던 레오파드</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>커뮤니티</h2>
+                            <ul>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">포토후기</a></li>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sub_menu_event mobile">
+                        <li><a href="#"><img src="./images/sub_menu_event1.jpg" alt="포토후기"></a></li>
+                        <li><a href="#"><img src="./images/sub_menu_event2.jpg" alt="이벤트"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="main_banner">
+            <div class="banner_inner">
+                <!-- Swiper -->
+                <div class="swiper main_banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/main_banner1.jpg" alt="메인배너2"></div>
+                        <div class="swiper-slide"><img src="./images/main_banner2.jpg" alt="메인배너3"></div>
+                        <div class="swiper-slide"><img src="./images/main_banner3.jpg" alt="메인배너3"></div>
+                        <div class="swiper-slide"><img src="./images/main_banner4.jpg" alt="메인배너4"></div>
+                        <div class="swiper-slide"><img src="./images/main_banner5.jpg" alt="메인배너5"></div>
+                        <div class="swiper-slide"><img src="./images/main_banner6.jpg" alt="메인배너6"></div>
+                        <div class="swiper-slide"><img src="./images/main_banner4.jpg" alt="메인배너7"></div>
+                        <div class="swiper-slide"><img src="./images/main_banner5.jpg" alt="메인배너7"></div>
+                        <div class="swiper-slide"><img src="./images/main_banner3.jpg" alt="메인배너7"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section id="main_best" class="max_inner">
+            <h2 class="h2_title">WEEKLY BEST</h2>
+            <!-- Swiper -->
+            <div class="swiper main_best_list">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/pouch_mono1.jpg" alt="베스트1"></a>
+                            <span class="tag_best1">1</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">모던 그랑</p>
+                            <h3 class="prd_title">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/icebag_green.jpg" alt="베스트2"></a>
+                            <span>2</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">까멜 쁘띠 플뢰르</p>
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/teacoaster_black_big1.jpeg" alt="베스트3"></a>
+                            <span>3</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">모던 그랑</p>
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/bag_1_5.jpg" alt="베스트4"></a>
+                            <span>4</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">모던 레오파드</p>
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/tea_coaster_green1.jpeg" alt="베스트5"></a>
+                            <span>5</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">까멜 쁘띠 플뢰르</p>
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/pouch_mono1.jpg" alt="베스트1"></a>
+                            <span>6</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">모던 그랑</p>
+                            <h3 class="prd_title">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/icebag_green.jpg" alt="베스트2"></a>
+                            <span>7</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">까멜 쁘띠 플뢰르</p>
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/teacoaster_black_big1.jpeg" alt="베스트3"></a>
+                            <span>8</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">모던 그랑</p>
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/bag_1_5.jpg" alt="베스트4"></a>
+                            <span>9</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">모던 레오파드</p>
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb"><a href="#"><img src="./images/tea_coaster_green1.jpeg" alt="베스트5"></a>
+                            <span>10</span>
+                        </div>
+                        <div class="info">
+                            <p class="brand">까멜 쁘띠 플뢰르</p>
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main_new">
+            <h2 class="h2_title">NEW ARRIVALS</h2>
+            <ul class="new_tab">
+                <li><button class="active" data-tab="new_cate_all">전체</button></li>
+                <li><button data-tab="new_cate_petit">쁘띠 플뢰르</button></li>
+                <li><button data-tab="new_cate_grand">모던 그랑</button></li>
+                <li><button data-tab="new_cate_leopard">까멜 레오파드</button></li>
+            </ul>
+
+            <div class="swiper_box active" id="new_cate_all">
+                <div class="swiper main_new_list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/icebag_green.jpg" alt="신상1"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/teacoaster_black_big1.jpeg"
+                                        alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_1_6.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/teacoaster_black_big1.jpeg"
+                                        alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_2_1.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/icebag_yellow2.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_1_3.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination new_page"></div>
+                </div>
+            </div>
+            <div class="swiper_box" id="new_cate_petit">
+                <div class="swiper main_new_list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/icebag_yellow2.jpg" alt="신상2"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/tea_coaster_green1.jpeg" alt="신상3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/teacoaster_black_big1.jpeg"
+                                        alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_1_6.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/teacoaster_black_big1.jpeg"
+                                        alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_2_1.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/icebag_yellow2.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_1_3.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination new_page"></div>
+                </div>
+            </div>
+            <div class="swiper_box" id="new_cate_grand">
+                <div class="swiper main_new_list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/icebag_green.jpg" alt="신상1"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/teacoaster_black_big1.jpeg"
+                                        alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_1_6.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/teacoaster_black_big1.jpeg"
+                                        alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_2_1.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/icebag_yellow2.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_1_3.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination new_page"></div>
+                </div>
+            </div>
+            <div class="swiper_box" id="new_cate_leopard">
+                <div class="swiper main_new_list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/icebag_green.jpg" alt="신상1"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/teacoaster_black_big1.jpeg" alt="신상2"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/tea_coaster_green1.jpeg" alt="신상3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="thumb"><a href="#"><img src="./images/bag_1_3.jpg" alt="베스트3"></a>
+                            </div>
+                            <div class="info">
+                                <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                </h3>
+                                <div class="price_area">
+                                    <p class="price">
+                                        <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                    </p>
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination new_page"></div>
+                </div>
+            </div>
+        </section>
+        <section id="trend_pick" class="max_inner">
+            <h2 class="h2_title">TREND PICK</h2>
+            <ul class="trend_list">
+                <li><a href="#"><img src="./images/trend1.jpg" alt="트렌드1"></a>
+                    <h3><a href="#">에어팟 파우치</a></h3>
+                    <p>비비드한 컬러감의 톡톡 튀는 감성 파우치</p>
+                </li>
+                <li><a href="#"><img src="./images/trend2.jpg" alt="트렌드2"></a>
+                    <h3><a href="#">까멜 동전 지갑</a></h3>
+                    <p>가방에 쏙! 카드와 동전을 한번에 수납 할 수 있는 실용 아이템</p>
+                </li>
+                <li><a href="#"><img src="./images/trend3.jpg" alt="트렌드3"></a>
+                    <h3><a href="#">주방 인테리어 아이템</a></h3>
+                    <p>티코스터와 주방장갑, 테이블 매트를 만나보세요!</p>
+                </li>
+            </ul>
+        </section>
+        <section id="brand_banner">
+            <div class="brand_inner">
+                <div class="text_box">
+                    <img src="./images/camell_logo.svg" alt="까멜" class="brand_logo">
+                    <h2>일상 속 작은 행복을<br>
+                        담아내는 패브릭 브랜드, <b>까멜</b>
+                    </h2>
+                    <p>까멜은 직접 디자인한 패턴과 따뜻한 색감으로 오래 곁에 두고 싶은 소품을 선보입니다. 매일 사용하는 물건이 즐거운 추억이 되길 바라는 마음을 담았습니다.</p>
+                    <div class="btn_basic"><a href="#" class="bg_red">브랜드 스토리 <img src="./images/arrow_right_white.png"
+                                alt="보기"></a>
+                    </div>
+                </div>
+                <img src="./images/red_camell.svg" alt="까멜플라워" class="main_ani1">
+                <img src="./images/red_camell.svg" alt="까멜플라워" class="main_ani2">
+            </div>
+
+        </section>
+        <section id="event_banner" class="max_inner">
+            <ul>
+                <li class="main_event1">
+                    <div class="img_box"><img src="./images/event_img1.png" alt="신규가입 1만원 쿠폰 증정+무료배송">
+                    </div>
+                    <p class="event_title">
+                        <span class="event_des">까멜 온라인 스토어 회원가입 혜택</span>
+                        <a href="#">1만원 쿠폰 증정 + 무료배송</a>
+                    </p>
+                </li>
+                <li class="main_event2">
+                    <div class="img_box">
+                        <img src="./images/event_img2.png" alt="포토후기 이벤트">
+                    </div>
+                    <p class="event_title">
+                        <span class="event_des">후기 작성하고 포인트 받으세요!</span>
+                        <a href="#">나도 리뷰어! 포토리뷰 이벤트</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section id="main_line">
+            <div class="petit_line max_inner">
+                <div class="line_info">
+                    <img src="./images/petit_title.svg" alt="Petit Fleur" class="main_line_img">
+                    <div class="line_info_text">
+                        <h3>까멜 쁘띠 플뢰르</h3>
+                        <p>작고 귀여운 동백 모티브 패턴으로 발랄하고 상큼한 컬러로
+                            일상에 생기를 불어넣어 줍니다.</p>
+                        <div class="btn_basic">
+                            <a href="#">전체 상품보기 <img src="./images/arrow_right2.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="main_line_list">
+                    <li>
+                        <div class="thumb"><a href="#"><img src="./images/bag_1_2.jpg" alt="신상1"></a>
+                        </div>
+                        <div class="info">
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb"><a href="#"><img src="./images/teacoaster_red1.jpg" alt="신상1"></a>
+                        </div>
+                        <div class="info">
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb"><a href="#"><img src="./images/icebag_yellow.jpg" alt="신상1"></a>
+                        </div>
+                        <div class="info">
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb"><a href="#"><img src="./images/teacoaster_yellow1.jpg" alt="신상1"></a>
+                        </div>
+                        <div class="info">
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="main_line2">
+            <div class="grand_line max_inner">
+                <ul class="main_line_list">
+                    <li>
+                        <div class="thumb"><a href="#"><img src="./images/teacoaster_black3.jpg" alt="신상1"></a>
+                        </div>
+                        <div class="info">
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb"><a href="#"><img src="./images/icebag_yellow2.jpg" alt="신상1"></a>
+                        </div>
+                        <div class="info">
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb"><a href="#"><img src="./images/teacoaster_black2.jpg" alt="신상1"></a>
+                        </div>
+                        <div class="info">
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb"><a href="#"><img src="./images/bag_2_3.jpg" alt="신상1"></a>
+                        </div>
+                        <div class="info">
+                            <h3 class="prd_title"><a href="#">블랙&화이트 까멜 빅 모던 베이직 에코백 데일리 아이템</a>
+                                <span class="tag_best">BEST</span>
+                                <span class="tag_free">무료배송</span>
+                            </h3>
+                            <div class="price_area">
+                                <p class="price">
+                                    <span class="discount">24%</span><span class="origin_price"></span>10,900
+                                </p>
+                                <p class="wish_area">
+                                    <button type="button" class="wish_btn" aria-label="찜하기"></button>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="line_info">
+                    <img src="./images/grand_title.svg" alt="Modern grand" class="main_line_img">
+                    <div class="line_info_text">
+                        <h3>까멜 모던 그랑</h3>
+                        <p>시원 시원한 동백 모티브로 제작한 패턴으로 밝고 건강한 느낌으로
+                            하루에 생동감을 불어 줍니다.</p>
+                        <div class="btn_basic">
+                            <a href="#">전체 상품보기 <img src="./images/arrow_right2.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main_video">
+            <div class="inner">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/atf4yvWPsqE?si=avytSwiF6lkxDiPa"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="main_video_text">
+                    <h3><img src="./images/sewingclass.svg" alt=""></h3>
+                    <h4>카드 수납 동전 지갑 만들기</h4>
+                    <p>많은 분들이 요청해 주셨던 카드가 수납되는 동전 지갑 만들기 영상입니다. 함께 만들어 보아요. <br>
+                        실용 만점 아이템으로 매달 인기 1위 제품입니다.</p>
+                    <div class="btn_basic">
+                        <a href="#">영상 보러가기 <img src="./images/arrow_right2.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="daily_clip">
+            <h2 class="h2_title">DAILY CLIP</h2>
+            <div class="swiper main_clip">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/video1.jpg" alt="비디오1" class="video_size">
+                        <div class="video_info">
+                            <p class="profile">
+                                <img src="./images/video_profile1.jpg" alt="">
+                                dksjamicake
+                            </p>
+                            <p>레오파드 파우치 데일리 아이템으로 좋네요~ 강추합니다. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/video1.jpg" alt="비디오1" class="video_size">
+                        <div class="video_info">
+                            <p class="profile">
+                                <img src="./images/video_profile1.jpg" alt="">
+                                dksjamicake
+                            </p>
+                            <p>레오파드 파우치 데일리 아이템으로 좋네요~ 강추합니다. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/video1.jpg" alt="비디오1" class="video_size">
+                        <div class="video_info">
+                            <p class="profile">
+                                <img src="./images/video_profile1.jpg" alt="">
+                                dksjamicake
+                            </p>
+                            <p>레오파드 파우치 데일리 아이템으로 좋네요~ 강추합니다. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/video1.jpg" alt="비디오1" class="video_size">
+                        <div class="video_info">
+                            <p class="profile">
+                                <img src="./images/video_profile1.jpg" alt="">
+                                dksjamicake
+                            </p>
+                            <p>레오파드 파우치 데일리 아이템으로 좋네요~ 강추합니다. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/video1.jpg" alt="비디오1" class="video_size">
+                        <div class="video_info">
+                            <p class="profile">
+                                <img src="./images/video_profile1.jpg" alt="">
+                                dksjamicake
+                            </p>
+                            <p>레오파드 파우치 데일리 아이템으로 좋네요~ 강추합니다. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/video1.jpg" alt="비디오1" class="video_size">
+                        <div class="video_info">
+                            <p class="profile">
+                                <img src="./images/video_profile1.jpg" alt="">
+                                dksjamicake
+                            </p>
+                            <p>레오파드 파우치 데일리 아이템으로 좋네요~ 강추합니다. </p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+        <section id="notice"></section>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
+    <!-- AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".main_banner", {
+            slidesPerView: "3",
+            /*한번에 보여지는 슬라이드*/
+            spaceBetween: 20,
+            /*슬라이드 사이 갭*/
+            loop: true,
+            speed: 3000,
+            /*슬라이드 하나 넘기는데 걸리는 시간, 1000=1초*/
+
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+            autoplay: {
+                delay: 1000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 0px
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 1280px
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
+            },
+        });
+        var swiper = new Swiper(".main_best_list", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 12,
+                },
+                768: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 16,
+                },
+                1280: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+        });
+        var swiper = new Swiper(".main_clip", {
+            slidesPerView: 4.4,
+            spaceBetween: 28,
+                pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 12,
+                },
+                768: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 16,
+                },
+                1280: {
+                    slidesPerView: 4.4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+        /* ===========================
+           New Arrivals Swiper
+        =========================== */
+
+        let mainNewSwipers = [];
+
+        function initMainNewSwiper() {
+
+            // 기존 swiper 제거
+            mainNewSwipers.forEach(swiper => swiper.destroy(true, true));
+            mainNewSwipers = [];
+
+            // 모든 main_new_list 초기화
+            document.querySelectorAll(".main_new_list").forEach(el => {
+
+                const swiper = new Swiper(el, {
+
+                    ...(window.innerWidth < 768
+                        ? {
+                            effect: "cards",
+                            grabCursor: true,
+                            pagination: false,
+                        }
+                        : {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+
+                            pagination: {
+                                el: el.querySelector(".swiper-pagination"),
+                                clickable: true,
+                            },
+
+                            autoplay: {
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            },
+                        })
+
+                });
+
+                mainNewSwipers.push(swiper);
+
+            });
+
+        }
+
+        initMainNewSwiper();
+
+        let resizeTimer;
+
+        window.addEventListener("resize", () => {
+
+            clearTimeout(resizeTimer);
+
+            resizeTimer = setTimeout(() => {
+
+                initMainNewSwiper();
+
+            }, 200);
+
+        });
+
+
+        /* ===========================
+           New Arrivals Tab
+        =========================== */
+
+        const tabs = document.querySelectorAll(".new_tab button");
+        const swiperBoxes = document.querySelectorAll(".swiper_box");
+
+        tabs.forEach((tab, index) => {
+
+            tab.addEventListener("click", () => {
+
+                // active 제거
+                tabs.forEach(btn => btn.classList.remove("active"));
+                swiperBoxes.forEach(box => box.classList.remove("active"));
+
+                // 현재 탭 활성화
+                tab.classList.add("active");
+
+                // 해당 swiper 표시
+                const target = document.getElementById(tab.dataset.tab);
+
+                target.classList.add("active");
+
+                // swiper 다시 계산
+                setTimeout(() => {
+
+                    if (mainNewSwipers[index]) {
+                        mainNewSwipers[index].update();
+                    }
+
+                }, 0);
+
+            });
+
+        });
+        /*Wish Button*/
+        const wishBtns = document.querySelectorAll(".wish_btn");
+
+        wishBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                btn.classList.toggle("active");
+            });
+        });
+        const btnMenu = document.querySelector(".btn_menu");
+
+        /*Mobile Menu */
+        const mobileMenu = document.querySelector(".mobile_menu");
+
+        btnMenu.addEventListener("click", () => {
+            btnMenu.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+        });
+        AOS.init();
+    </script>
 </body>
+
 </html>
