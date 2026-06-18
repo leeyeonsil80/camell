@@ -29,7 +29,7 @@ a {
     --red-color: #FF5A5A;
     --ivory-color: #FFF7EA;
     --light_gray: #ddd;
-    --dark_gray: #999;
+    --dark_gray: #555;
     --des_text: #999;
     --brand-yellow: #FFE317;
     --brand-green: #3BB26B;
@@ -52,8 +52,8 @@ a {
 --fs-40: clamp(24px, calc(100vw * 40 / 1320), 40px);          /* 24px ~ 40px */
 
 /* Product */
---fs-product-name: clamp(14px, calc(100vw * 18 / 1320), 18px); /* 14px ~ 18px */
---fs-price: clamp(16px, calc(100vw * 20 / 1320), 20px);        /* 16px ~ 20px */
+--fs-product-name: clamp(16px, calc(100vw * 18 / 1320), 18px); /* 16px ~ 18px */
+--fs-price: clamp(18px, calc(100vw * 20 / 1320), 20px);        /* 18px ~ 20px */
 --fs-brand: clamp(12px, calc(100vw * 14 / 1320), 14px);        /* 12px ~ 14px */
 
 /* Common */
@@ -62,30 +62,30 @@ a {
 --fs-small: clamp(12px, calc(100vw * 14 / 1320), 14px);        /* 12px ~ 14px */
 --fs-caption: clamp(10px, calc(100vw * 12 / 1320), 12px);      /* 10px ~ 12px */
 
-    /* Weight */
-    --fw-light: 300;
-    --fw-regular: 400;
-    --fw-medium: 500;
-    --fw-bold: 700;
+/* Weight */
+--fw-light: 300;
+--fw-regular: 400;
+--fw-medium: 500;
+--fw-bold: 700;
 
-    /* Padding */
-    --space-4: clamp(2px, calc(100vw * 4 / 1320), 4px);
-    --space-8: clamp(4px, calc(100vw * 8 / 1320), 8px);
-    --space-12: clamp(6px, calc(100vw * 12 / 1320), 12px);
-    --space-16: clamp(8px, calc(100vw * 16 / 1320), 16px);
-    --space-20: clamp(10px, calc(100vw * 20 / 1320), 20px);
-    --space-24: clamp(12px, calc(100vw * 24 / 1320), 24px);
-    --space-30: clamp(15px, calc(100vw * 30 / 1320), 30px);
-    --space-32: clamp(16px, calc(100vw * 32 / 1320), 32px);
-    --space-40: clamp(20px, calc(100vw * 40 / 1320), 40px);
-    --space-48: clamp(24px, calc(100vw * 48 / 1320), 48px);
-    --space-50: clamp(25px, calc(100vw * 50 / 1320), 50px);
-    --space-64: clamp(32px, calc(100vw * 64 / 1320), 64px);
-    --space-80: clamp(40px, calc(100vw * 80 / 1320), 80px);
-    --space-100: clamp(50px, calc(100vw * 100 / 1320), 100px);
-    --space-120: clamp(60px, calc(100vw * 120 / 1320), 120px);
-    --space-130: clamp(65px, calc(100vw * 130 / 1320), 130px);
-    --space-150: clamp(75px, calc(100vw * 150 / 1320), 150px);
+/* Padding */
+--space-4: clamp(2px, calc(100vw * 4 / 1320), 4px);
+--space-8: clamp(4px, calc(100vw * 8 / 1320), 8px);
+--space-12: clamp(6px, calc(100vw * 12 / 1320), 12px);
+--space-16: clamp(8px, calc(100vw * 16 / 1320), 16px);
+--space-20: clamp(10px, calc(100vw * 20 / 1320), 20px);
+--space-24: clamp(12px, calc(100vw * 24 / 1320), 24px);
+--space-30: clamp(15px, calc(100vw * 30 / 1320), 30px);
+--space-32: clamp(16px, calc(100vw * 32 / 1320), 32px);
+--space-40: clamp(20px, calc(100vw * 40 / 1320), 40px);
+--space-48: clamp(24px, calc(100vw * 48 / 1320), 48px);
+--space-50: clamp(25px, calc(100vw * 50 / 1320), 50px);
+--space-64: clamp(32px, calc(100vw * 64 / 1320), 64px);
+--space-80: clamp(30px, calc(100vw * 80 / 1320), 80px);
+--space-100: clamp(40px, calc(100vw * 100 / 1320), 100px);
+--space-120: clamp(60px, calc(100vw * 120 / 1320), 120px);
+--space-130: clamp(65px, calc(100vw * 130 / 1320), 130px);
+--space-150: clamp(40px, calc(100vw * 150 / 1320), 150px);
 }
 
 html {
@@ -208,6 +208,9 @@ h1 img {
     padding: 5px;
     display: flex;
 }
+.top_sub_btn li img{
+    width: 24px;
+}
 #header h1{
     flex-shrink: 0;
 }
@@ -319,7 +322,7 @@ h1 img {
 }
 
 .lnb h2 {
-    width: 120px;
+    width: 140px;
     font-size: 18px;
     font-weight: 500;
     background: url("../images/arrow_right.png") no-repeat 95% 50%;
@@ -346,11 +349,9 @@ h1 img {
     padding-top: 5px;
 }
 
-#main_best {
-    padding: var(--space-150) 0;
+.main_best_list,.main_new_list{
+    padding-left:16px;
 }
-
-.main_best_list {}
 
 #main_best .main_best_list .swiper-slide {
     position: relative;
@@ -371,10 +372,7 @@ h1 img {
 
 .info {
     padding: 0.5em 0;
-}
-
-.main_best_list {
-    padding: 20px;
+    overflow: hidden;
 }
 
 .main_best_list .swiper-slide img {
@@ -392,16 +390,18 @@ h1 img {
 .prd_title {
     font-size: var(--fs-product-name);
     /* 14px ~ 18px */
-    line-height: 1.5;
+    line-height: 1.6;
     font-weight: 400;
-    padding: 0.5em 0;
+    margin: 0.5em 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     /* 몇 줄에서 자를지 */
-    overflow: hidden;
+    overflow:hidden;
 }
-
+.prd_title span{
+    display: none;
+}
 .price_area {
     display: flex;
     justify-content: space-between;
@@ -446,7 +446,7 @@ h1 img {
 .h2_title {
     font-family: var(--font-en);
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: clamp(20px, 3vw,30px);
     letter-spacing: 20%;
     text-align: center;
     padding-bottom: var(--space-100);
@@ -480,17 +480,11 @@ h1 img {
 
 #main_new {
     position: relative;
-    background: var(--ivory-color);
-    padding-top: clamp(60px, 5.21vw, 100px);
-    padding-bottom: clamp(60px, 5.21vw, 100px);
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 
 
 .new_tab {
-    font-size: clamp(0.875rem, 0.8rem + 0.5vw, 1.125rem);
     display: flex;
     gap: clamp(8px, 1.5vw, 20px);
     justify-content: center;
@@ -498,7 +492,8 @@ h1 img {
 
 .new_tab li button{
     display: inline-block;
-    padding: 10px clamp(7px, 2.2vw, 30px);
+    font-size: 18px;
+    padding: 10px 30px;
     background: #fff;
     border: 1px solid var(--light_gray);
     outline: none;
@@ -512,22 +507,16 @@ h1 img {
     color: var(--black-color);
 }
 .new_tab li button.active {
-    color: var(--black-color);
+    background-color: var(--black-color);
+    color: #fff;
     border: 1px solid var(--black-color);
     font-weight: bold;
 }
 
-
-#main_new .swiper {
-    max-width: 1320px;
-    margin: 0 auto;
+#main_new,#main_best{
+    padding-top: var(--space-150);
 }
 
-#main_new .swiper-slide {
-    background: #fff;
-    padding: var(--space-24);
-    box-sizing: border-box;
-}
 .swiper_box {
     display:none;
 }
@@ -595,9 +584,9 @@ h1 img {
 }
 
 .trend_list p {
-    font-size: 0.92rem;
+    font-size: 1rem;
     font-weight: 300;
-    color: var(--des_text);
+    color: var(--dark_gray);
 }
 
 .brand_logo {
@@ -606,11 +595,12 @@ h1 img {
 
 #brand_banner {
     background-color: var(--ivory-color);
-    height: clamp(350px, 41vw,550px);
+    height: clamp(330px, 41vw,550px);
     overflow: hidden;
+    padding:0;
 }
 
-.brand_inner {
+#brand_banner .brand_inner {
     max-width: 1320px;
     position: relative;
     margin: 0 auto;
@@ -618,11 +608,12 @@ h1 img {
 }
 
 .brand_inner .text_box {
-    width: clamp(400px,37vw,500px);
+    width: clamp(320px,37vw,500px);
+    word-break: keep-all;
 }
 
 .brand_inner h2 {
-    font-size: var(--fs-40);
+    font-size: 40px;
     font-weight: 300;
     line-height: 1.2;
     padding: var(--space-24) 0;
@@ -644,7 +635,7 @@ h1 img {
 }
 
 .btn_basic a {
-    padding: 15px 30px;
+    padding: 0.8em 1.6em;
     display: inline-flex;
     justify-content: center;
     gap: 5px;
@@ -654,8 +645,12 @@ h1 img {
     background-color: #fff;
     color: #111;
     font-weight: 600;
+    transition: all 0.3s;
 }
-
+.btn_basic a:hover{
+    background-color: #111;
+    color:#fff;
+}
 #brand_banner .bg_red {
     background-color: var(--red-color);
     color: #fff;
@@ -718,7 +713,7 @@ h1 img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px;
+    padding: clamp(20px,1vw,45px) clamp(20px,1vw,45px);
 }
 
 #event_banner ul li .img_box {
@@ -770,7 +765,7 @@ h1 img {
     align-items: center;
     gap: 50px;
     padding:
-        clamp(60px, 6.77vw, 130px) clamp(30px, 5.21vw, 100px);
+        clamp(40px, 6.77vw, 130px) clamp(20px, 5.21vw, 100px);
     box-sizing: border-box;
 }
 
@@ -780,7 +775,7 @@ h1 img {
     justify-content: space-between;
     align-items: center;
     padding:
-        clamp(60px, 6.77vw, 130px) clamp(30px, 5.21vw, 100px);
+        clamp(40px, 6.77vw, 130px) clamp(20px, 5.21vw, 100px);
     box-sizing: border-box;
 }
 
@@ -796,9 +791,9 @@ h1 img {
 }
 
 .line_info h3 {
-    font-size: 2.6rem;
+    font-size: clamp(24px,3.4vw, 46px);
     font-weight: 600;
-    padding-bottom: 30px;
+    padding-bottom:clamp(10px,2.2vw,30px);
 }
 
 .line_info p {
@@ -821,7 +816,7 @@ h1 img {
 #main_video {
     background: #f5f5f5;
     padding:
-        clamp(60px, 6.77vw, 130px)
+        clamp(60px, 6.77vw, 130px) 20px;
 }
 
 #main_video .inner {
@@ -830,13 +825,17 @@ h1 img {
     grid-template-columns: 3fr 2fr;
     align-items: center;
 }
-
+#main_video iframe{
+    width:100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
 .main_video_text {
     padding-right: 2vw;
 }
 
 .main_video_text h4 {
-    font-size: clamp(24px, 2.727vw, 36px);
+    font-size: clamp(20px, 2.727vw, 36px);
     font-weight: 500;
     padding: 2.7vw 0;
 }
@@ -874,16 +873,18 @@ h1 img {
     padding-right: 20px;
 }
 .sub_menu_event.mobile{
+    display: none;
     flex-direction: column;
 }
 .sub_menu_event.mobile li img{
     margin:0 auto;
 }
 #daily_clip{
-    padding: var(--space-150) var(--space-30);
+    padding: var(--space-150) 0;
 
 }
 .main_clip{
+    padding-left:20px;
     padding-bottom:var(--space-64);
 }
 .main_clip .swiper-slide{
@@ -912,6 +913,13 @@ h1 img {
     bottom: 0;
     background-color:rgba(0, 0, 0, 0.7);
 }
+.video_text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* 몇 줄에서 자를지 */
+    overflow: hidden;
+}
 .video_size{
      width: 100%;
 }
@@ -926,6 +934,173 @@ h1 img {
 .profile img{
     width: clamp(30px,2.6vw,50px);
     border-radius: 50%;
+}
+.board_list{
+    border-top:1px solid #111;
+    border-bottom:1px solid #111;
+}
+.board_list li{
+    border-bottom:1px solid #ddd;
+}
+.board_list li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: var(--fs-body-lg);
+    padding: var(--space-30) 20px;
+}
+
+.category {
+    width: clamp(70px, 5vw, 100px);
+    flex-shrink: 0;
+    font-family: var(--font-en);
+    font-size: 0.9em;
+    text-align:center;
+    font-weight: bold;
+}
+
+.title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.date {
+    width: clamp(100px, 8vw, 130px);
+    margin-left: auto;
+    flex-shrink: 0;
+    color: #999;
+    text-align: right;
+}
+#notice{
+
+}
+#notice .h2_title{
+    position: relative;
+}
+#notice .h2_title .btn_plus{
+    position: absolute;
+    top:8px;
+    width: 30px;
+    right:10px;
+    background: none;
+    border:none;
+    transform:translateX(-50%);
+    cursor: pointer;
+}
+#notice .h2_title .btn_plus img{
+    max-width: 100%;
+}
+
+#main_brand_banner{
+    margin:var(--space-150) 0 0;
+    background: url('../images/tea_coaster_green1.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+#main_brand_banner p{
+    font-size: var(--fs-h1);
+    color: #fff;
+    backdrop-filter: brightness(0.4);
+    letter-spacing: 20%;
+    font-weight: 600;
+    text-align: center;
+    padding: var(--space-150) 0;
+}
+#main_brand_banner p span{
+    display: block;
+    font-size: 0.5em;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+#insta{
+    padding:var(--space-150) 0;
+}
+#insta .h2_title span{
+    display: block;
+    font-family: var(--font-main);
+    padding-top:10px;
+    font-size: 0.65em;
+    font-weight: 300;
+    text-decoration: underline;
+    letter-spacing: 20%;
+}
+#insta ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#insta ul li{
+    overflow: hidden;
+}
+#insta ul li img{
+    max-width: 100%;
+    transition: all 0.3s;
+}
+#insta ul li img:hover{
+    transform: scale(1.2);
+}
+#footer{
+    border-top:2px solid var(--black-color);
+    padding: var(--space-50);
+    font-size: 13px;
+}
+.footer_logo{
+    width: 70px;
+}
+.footer_menu{
+    display: flex;
+    padding:var(--space-20) 0;
+    gap: var(--space-24);
+    font-weight: 500;
+}
+.footer_info{
+    color: var(--dark_gray);
+}
+.footer_customer{
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.aside_menu{
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    right: 25px;
+    bottom: 33%;
+    transition: all 0.3s;
+    z-index: 10000;
+}
+.aside_menu.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.aside_menu li{
+    padding-bottom: var(--space-16);
+}
+.aside_menu a{
+    display: block;
+    width: clamp(50px,5vw,70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(50px,5vw,70px);
+    border:1px solid var(--black-color);
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 9999;
+}
+.aside_menu a:first-child img{
+    max-width: 100%;
+}
+.kakaotalk a{
+    background-color: var(--brand-yellow);
+}
+.kakaotalk img, .chatbot img{
+    max-width: 80%;
 }
 @media (max-width:1279px) {
     #header{
@@ -948,7 +1123,16 @@ h1 img {
         padding:20px;
         box-sizing: border-box;
     }
-
+    #notice .h2_title .btn_plus{
+        position: absolute;
+        top:8px;
+        width: 24px;
+        right:10px;
+        background: none;
+        border:none;
+        transform:translateX(-50%);
+        cursor: pointer;
+    }
     .mobile_menu.active {
         left: 0;
     }
@@ -956,7 +1140,6 @@ h1 img {
         display: none;
     }
     #header .top_sub_btn{
-        margin-left: auto;
     }
     .btn_menu{
         display: block;
@@ -1006,7 +1189,10 @@ h1 img {
     #main_video .inner iframe {
         max-width: 100%;
     }
-
+    .new_tab li button{
+        font-size:15px;
+        padding:7px 20px;
+    }
 }
 
 @media (max-width:767px) {
@@ -1018,36 +1204,61 @@ h1 img {
         display: none;
     }
 
-    .main_new_list {
-        width: min(85vw, 340px);
-        aspect-ratio: 1 / 1.28;
-        margin: 0 auto;
-    }
-
-    .main_new_list .swiper-slide {
-        border-radius: 16px;
-        overflow: hidden;
-    }
-
-    .main_new_list .swiper-slide img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
 
     .trend_list {
         flex-direction: column;
     }
-
+    .main_line_list{
+        padding:0;
+    }
     .petit_line {
         flex-direction: column;
-        padding: 30px;
+        padding: 20px;
+        gap: 20px;
     }
-
+    #event_banner ul li{
+        gap:10px;
+    }
+    .petit_line .line_info{
+        padding:0 10px;
+    }
+    .petit_line {
+        padding: 40px 20px;
+        gap: 20px;
+    }
+    .grand_line .line_info_text{
+        margin-top:0px;
+    }
+    .grand_line{
+        gap: 20px;
+    }
+    #main_video{
+        padding:30px 16px;
+    }
     #main_video .inner {
         flex-direction: column;
+        gap: 30px;
     }
-
+    #daily_clip{
+        padding-bottom:60px;
+    }
+    .video_info{
+        padding:10px;
+    }
+    .profile{
+        font-size: 14px;
+        gap: 5px;
+        padding-bottom: 5px;
+    }
+    .video_info .video_text{
+        font-size:13px;
+    }
+    .main_video_text{
+    width: 100%;
+    }
+    .main_video_text img{
+        width: 80%;
+    }
     .main_line_img {
         max-width: 70%;
     }
@@ -1055,7 +1266,73 @@ h1 img {
         width: 100%;
         word-break: keep-all;
     }
+    .line_info_text .btn_basic{
+        display: none;
+    }
     #brand_banner .brand_inner .text_box .btn_basic{
         display: block;
+    }
+    #insta ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+    #notice .h2_title .btn_plus{
+        position: absolute;
+        top:4px;
+        width: 20px;
+        right:10px;
+        background: none;
+        border:none;
+        transform:translateX(-50%);
+        cursor: pointer;
+    }
+    .main_video_text{
+    width: 100%;
+    padding: 0 10px;
+    }
+    .main_video_text img{
+        width: 80%;
+    }
+    .main_video_text .btn_basic{
+        display: none;
+    }
+    .main_ani1, .main_ani2{
+        display: none;
+    }
+    .brand_inner h2{
+        font-size: 20px;
+    }
+    .brand_inner .text_box p{
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+    .aside_menu{
+        bottom:2%;
+        right:2%;
+    }
+    .aside_menu ul li:nth-child(2),.aside_menu ul li:nth-child(3){
+        display: none;
+    }
+    .board_list li a{
+        font-size: 14px;
+    }
+    .board_list li .category{
+        display: none;
+    }
+    .board_list li .date{
+        display: none;
+    }
+    .board_list li .title{
+        text-overflow: ellipsis;
+    }
+    .new_tab li button{
+        font-size:13px;
+        padding:5px 12px;
+    }
+    .line_info p {
+    padding-bottom: 0;
+    }
+    #footer{
+        padding-bottom:50px;
     }
 }
