@@ -410,7 +410,7 @@ h1 img {
 }
 .wish_btn {
     display: block;
-    width: clamp(16px, 1.8vw, 24px);
+    width: clamp(20px, 1.8vw, 24px);
     aspect-ratio: 1 / 1;
     background: url("../images/icon_wish2.png") no-repeat center;
     background-size: contain;
@@ -421,8 +421,18 @@ h1 img {
 }
 
 /* 마우스 오버 */
-.wish_btn:hover {
+@media (hover:hover){
+    .wish_btn:hover {
     background-image: url("../images/icon_wish_on.png");
+    }
+    .new_tab li button:hover{
+        border:1px solid var(--black-color);
+        color: var(--black-color);
+    }
+    .btn_basic a:hover{
+    background-color: #111;
+    color:#fff;
+    }
 }
 
 /* 클릭 후 유지 */
@@ -503,10 +513,7 @@ h1 img {
     transition: all 0.3s;
     cursor: pointer;
 }
-.new_tab li button:hover{
-    border:1px solid var(--black-color);
-    color: var(--black-color);
-}
+
 .new_tab li button.active {
     background-color: var(--black-color);
     color: #fff;
@@ -648,10 +655,7 @@ h1 img {
     font-weight: 600;
     transition: all 0.3s;
 }
-.btn_basic a:hover{
-    background-color: #111;
-    color:#fff;
-}
+
 #brand_banner .bg_red {
     background-color: var(--red-color);
     color: #fff;
@@ -855,7 +859,9 @@ h1 img {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    padding:10px;
 }
+
 .mobile_menu_list > li{
     display: flex;
     align-items: flex-start;
@@ -866,12 +872,16 @@ h1 img {
     border-bottom:none;
 }
 .mobile_menu_list li h2{
-    width: 130px;
-    font-size: 16px;
+    width: 160px;
+    font-size: 18px;
     font-weight: 500;
     background: url("../images/arrow_right.png") no-repeat 85% 60%;
     background-size:4%;
     padding-right: 20px;
+}
+.mobile_menu_list li ul{
+    padding-top:1px;
+    font-size:18px;
 }
 .sub_menu_event.mobile{
     display: none;
@@ -1356,6 +1366,9 @@ h1 img {
     }
     #footer{
         padding:30px 16px 100px;
+    }
+    .price_area .wish_area{
+        padding-right:0px;
     }
     #main_brand_banner{
     margin:var(--space-150) 0 0;
