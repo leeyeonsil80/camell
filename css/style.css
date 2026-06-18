@@ -58,7 +58,7 @@ a {
 
 /* Common */
 --fs-body-lg: clamp(16px, calc(100vw * 20 / 1320), 20px);      /* 16px ~ 20px */
---fs-body: clamp(14px, calc(100vw * 16 / 1320), 16px);         /* 14px ~ 16px */
+--fs-body: clamp(16px, calc(100vw * 16 / 1320), 16px);         /* 14px ~ 16px */
 --fs-small: clamp(12px, calc(100vw * 14 / 1320), 14px);        /* 12px ~ 14px */
 --fs-caption: clamp(10px, calc(100vw * 12 / 1320), 12px);      /* 10px ~ 12px */
 
@@ -381,10 +381,11 @@ h1 img {
 
 
 .brand {
-    font-size: clamp(0.75rem, 0.7rem + 0.3vw, 0.875rem);
+    font-size: clamp(13px, 0.7rem + 0.3vw, 0.875rem);
     /* 12px ~ 14px */
     line-height: 1.4;
     color: #777;
+    padding-top:5px;
 }
 
 .prd_title {
@@ -579,12 +580,12 @@ h1 img {
 
 .trend_list h3 {
     padding: 0.8em 0 0.5em;
-    font-size: 1.1rem;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .trend_list p {
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 300;
     color: var(--dark_gray);
 }
@@ -713,11 +714,11 @@ h1 img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: clamp(20px,1vw,45px) clamp(20px,1vw,45px);
+    padding: clamp(20px,2vw,45px) clamp(20px,2vw,45px);
 }
 
 #event_banner ul li .img_box {
-    width: clamp(70px, 8.8vw, 170px);
+    width: clamp(70px, 8.8vw, 150px);
 }
 
 #event_banner ul li .img_box img {
@@ -742,7 +743,7 @@ h1 img {
 
 .event_des {
     display: block;
-    font-size: 0.6em;
+    font-size: 20px;;
     font-weight: 500;
 }
 .scroll_x {
@@ -775,7 +776,7 @@ h1 img {
     justify-content: space-between;
     align-items: center;
     padding:
-        clamp(40px, 6.77vw, 130px) clamp(20px, 5.21vw, 100px);
+        clamp(20px, 6.77vw, 130px) clamp(20px, 5.21vw, 100px);
     box-sizing: border-box;
 }
 
@@ -932,7 +933,7 @@ h1 img {
     font-weight: bold;
 }
 .profile img{
-    width: clamp(30px,2.6vw,50px);
+    width: clamp(20px,2.6vw,50px);
     border-radius: 50%;
 }
 .board_list{
@@ -1232,6 +1233,9 @@ h1 img {
     .grand_line{
         gap: 20px;
     }
+    .prd_title{
+        line-height: 1.4;
+    }
     #main_video{
         padding:30px 16px;
     }
@@ -1246,7 +1250,7 @@ h1 img {
         padding:10px;
     }
     .profile{
-        font-size: 14px;
+        font-size: 13px;
         gap: 5px;
         padding-bottom: 5px;
     }
@@ -1278,7 +1282,7 @@ h1 img {
     }
     #notice .h2_title .btn_plus{
         position: absolute;
-        top:4px;
+        top:5px;
         width: 20px;
         right:10px;
         background: none;
@@ -1287,8 +1291,8 @@ h1 img {
         cursor: pointer;
     }
     .main_video_text{
-    width: 100%;
-    padding: 0 10px;
+        width: 100%;
+        padding: 0 10px;
     }
     .main_video_text img{
         width: 80%;
@@ -1299,12 +1303,18 @@ h1 img {
     .main_ani1, .main_ani2{
         display: none;
     }
+    .brand_innder{
+        padding-bottom:0;
+    }
     .brand_inner h2{
-        font-size: 20px;
+        font-size: 24px;
     }
     .brand_inner .text_box p{
         margin-bottom: 15px;
-        font-size: 13px;
+        font-size: 15px;
+    }
+    .event_des{
+        font-size:14px;
     }
     .aside_menu{
         bottom:2%;
@@ -1313,26 +1323,44 @@ h1 img {
     .aside_menu ul li:nth-child(2),.aside_menu ul li:nth-child(3){
         display: none;
     }
+    .trend_list h3{
+        font-size:20px;
+    }
+    .trend_list p{
+        font-size:15px;
+    }
     .board_list li a{
+        flex-direction: column;
+        gap: 5px;
         font-size: 14px;
     }
     .board_list li .category{
         display: none;
     }
     .board_list li .date{
-        display: none;
+        order:-1;
+        margin-left: 0;
+        margin-right:auto;
+        text-align: left;
     }
     .board_list li .title{
+        width: 100%;
         text-overflow: ellipsis;
     }
     .new_tab li button{
-        font-size:13px;
+        font-size:14px;
         padding:5px 12px;
     }
     .line_info p {
     padding-bottom: 0;
     }
     #footer{
-        padding-bottom:50px;
+        padding:30px 16px 100px;
+    }
+    #main_brand_banner{
+    margin:var(--space-150) 0 0;
+    background: url('../images/tea_coaster_green1.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
     }
 }
