@@ -402,6 +402,7 @@ h1 img {
     overflow:hidden;
 }
 .prd_title span{
+    display: none;
     display: inline-block;
     font-size: 12px;
     padding: 2px 6px;
