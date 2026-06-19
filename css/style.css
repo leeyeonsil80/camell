@@ -41,6 +41,7 @@ button{
     --des_text: #999;
     --brand-yellow: #FFE317;
     --brand-green: #3BB26B;
+    --bg-light-gray:rgb(242, 244, 247);
 
     /* Font Family */
     --font-main: 'Pretendard';
@@ -916,10 +917,9 @@ h1 img {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background:#f5f5f5;
-    border:1px solid var(--light_gray);
+    background:var(--light_gray);
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     padding:8px 0;
     border-radius: 6px;
     color: var(--gray);
