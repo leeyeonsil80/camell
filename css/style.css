@@ -1173,7 +1173,7 @@ h1 img {
 .aside_menu button{
     font-size: 20px;
 }
-.btn_top{
+.btn_top i{
     color: var(--black-color);
 }
 .aside_menu li:first-child img{
@@ -1572,6 +1572,7 @@ h1 img {
     #main_brand_banner{
         background-attachment: scroll;
         background-size: cover;
+        background-position: 50% 70%;
     }
     /* Footer */
     #footer{
