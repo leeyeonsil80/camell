@@ -906,6 +906,7 @@ h1 img {
 }
 .mobile_menu_list li ul{
     font-size:16px;
+    color: var(--dark-gray);
 }
 .mobile_etc_menu{
     display: grid;
@@ -920,7 +921,7 @@ h1 img {
     background:var(--light_gray);
     text-align: center;
     font-size: 15px;
-    padding:8px 0;
+    padding:13px 0;
     border-radius: 6px;
     color: var(--gray);
     font-weight:500;
@@ -1171,6 +1172,9 @@ h1 img {
 }
 .aside_menu button{
     font-size: 20px;
+}
+.btn_top{
+    color: var(--black-color);
 }
 .aside_menu li:first-child img{
     max-width: 100%;
