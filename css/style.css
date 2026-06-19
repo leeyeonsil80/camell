@@ -149,7 +149,7 @@ h1 img {
     position: relative;
     width: 20px;
     height: 20px;
-    padding: 0;
+    padding: 8px;
     border: 0;
     cursor: pointer;
 }
@@ -403,12 +403,12 @@ h1 img {
     overflow:hidden;
 }
 .prd_title span{
-    display: none;
+    position: relative;
+    top: -2px;
     display: inline-block;
     font-size: 12px;
     padding: 2px 6px;
     line-height: 1.4;
-    /* display: none; */
 }
 .tag_free{
     background-color: var(--black-color);
@@ -1383,7 +1383,7 @@ h1 img {
         display: none;
     }
     .price{
-        font-size: 1rem;
+        font-size: 18px;
     }
     .main_best_list .thumb span{
         font-size: 1.1rem;
