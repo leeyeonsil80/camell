@@ -37,7 +37,7 @@ button{
     --ivory-color: #FFF7EA;
     --light_gray: rgb(235, 239, 243);
     --gray: rgb(132, 143, 154);
-    --dark-gray: rgb(64, 68, 75);
+    --dark-gray: rgb(86, 88, 100);
     --des_text: #999;
     --brand-yellow: #FFE317;
     --brand-green: #3BB26B;
@@ -660,6 +660,7 @@ h1 img {
     font-weight: 300;
     line-height: 1.4;
     padding-bottom: var(--space-24);
+    color: var(--dark-gray);
 }
 
 .btn_basic {
@@ -904,7 +905,6 @@ h1 img {
     padding-right: 20px;
 }
 .mobile_menu_list li ul{
-    padding-top:1px;
     font-size:16px;
 }
 .mobile_etc_menu{
