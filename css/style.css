@@ -29,7 +29,11 @@ button{
     outline: none;
     cursor: pointer;
 }
-
+button:focus,
+button:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
 :root {
     /*Color*/
     --black-color: #333;
